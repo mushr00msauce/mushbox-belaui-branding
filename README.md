@@ -13,7 +13,7 @@ Adds a branded header bar to the top of the belaUI page, visible on the login sc
 On a Rock 5A (or any device) already running belaUI:
 
 ```bash
-curl -sL https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main/install.sh | sudo bash
+wget -qO- https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main/install.sh | sudo bash
 ```
 
 This backs up your existing `index.html` and `style.css` (only on the first run — re-running is safe and won't overwrite the backup) before applying the patch.

@@ -6,7 +6,7 @@
 # Safe to re-run: only backs up the originals on the first run.
 #
 # Usage:
-#   curl -sL https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main/install.sh | sudo bash
+#   wget -qO- https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main/install.sh | sudo bash
 #
 set -e
 
@@ -39,9 +39,9 @@ else
 fi
 
 echo "Downloading branded files..."
-curl -sL "$REPO_RAW/index.html" -o /tmp/mushbox-index.html
-curl -sL "$REPO_RAW/style.css" -o /tmp/mushbox-style.css
-curl -sL "$REPO_RAW/img/mushbox-logo.png" -o /tmp/mushbox-logo.png
+wget -qO /tmp/mushbox-index.html "$REPO_RAW/index.html"
+wget -qO /tmp/mushbox-style.css "$REPO_RAW/style.css"
+wget -qO /tmp/mushbox-logo.png "$REPO_RAW/img/mushbox-logo.png"
 
 echo "Installing..."
 mv /tmp/mushbox-index.html "$BELAUI_PUBLIC/index.html"
