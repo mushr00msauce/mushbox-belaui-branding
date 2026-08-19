@@ -6,11 +6,11 @@
 # Safe to re-run: only backs up the originals on the first run.
 #
 # Usage:
-#   curl -sL https://raw.githubusercontent.com/YOUR-USERNAME/mushbox-belaui-branding/main/install.sh | sudo bash
+#   curl -sL https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main/install.sh | sudo bash
 #
 set -e
 
-REPO_RAW="https://raw.githubusercontent.com/YOUR-USERNAME/mushbox-belaui-branding/main"
+REPO_RAW="https://raw.githubusercontent.com/mushr00msauce/mushbox-belaui-branding/main"
 BELAUI_PUBLIC="/opt/belaUI/public"
 
 echo "== Mushbox belaUI branding installer =="
